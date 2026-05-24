@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tendify – Privacy Policy</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: #faf7f2;
+      color: #1f1e1b;
+      line-height: 1.7;
+      padding: 0 16px 80px;
+    }
+    .container { max-width: 720px; margin: 0 auto; }
+    header {
+      padding: 48px 0 32px;
+      border-bottom: 1px solid #e8e3da;
+      margin-bottom: 40px;
+    }
+    .logo { display: flex; align-items: center; gap: 12px; margin-bottom: 16px; }
+    .logo-icon {
+      width: 48px; height: 48px; border-radius: 12px;
+      background: linear-gradient(135deg, #5baeac, #3f8c8a);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 24px;
+    }
+    .logo-name { font-size: 22px; font-weight: 700; color: #1f1e1b; }
+    h1 { font-size: 28px; font-weight: 700; color: #1f1e1b; margin-bottom: 8px; }
+    .meta { font-size: 14px; color: #94928b; }
+    section { margin-bottom: 36px; }
+    h2 { font-size: 18px; font-weight: 600; color: #1f1e1b; margin-bottom: 12px; padding-bottom: 8px; border-bottom: 1px solid #e8e3da; }
+    p { margin-bottom: 12px; color: #1f1e1b; font-size: 16px; }
+    ul { padding-left: 20px; margin-bottom: 12px; }
+    li { margin-bottom: 6px; font-size: 16px; color: #1f1e1b; }
+    .highlight {
+      background: #dceeed; border-radius: 10px;
+      padding: 16px 20px; margin-bottom: 32px;
+      font-size: 15px; color: #2e6f6d; font-weight: 500;
+    }
+    a { color: #3f8c8a; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    footer {
+      margin-top: 60px; padding-top: 24px;
+      border-top: 1px solid #e8e3da;
+      font-size: 13px; color: #94928b;
+      display: flex; flex-wrap: wrap; gap: 16px; justify-content: space-between;
+    }
+  </style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <div class="logo">
+      <div class="logo-icon">🌿</div>
+      <span class="logo-name">Tendify</span>
+    </div>
+    <h1>Privacy Policy</h1>
+    <p class="meta">Last updated: May 24, 2025</p>
+  </header>
+
+  <div class="highlight">
+    🔒 Tendify does not collect, store, or sell your personal data on any server.
+    All data lives in your own iCloud account — only you and the people you invite can access it.
+  </div>
+
+  <section>
+    <h2>1. What Tendify Is</h2>
+    <p>Tendify is an iOS application that helps families and caregivers coordinate the daily care of a patient or elderly person. Tasks, reminders, and completion records are shared among invited caregivers through Apple's iCloud infrastructure.</p>
+  </section>
+
+  <section>
+    <h2>2. Data We Collect</h2>
+    <p>Tendify does not operate its own servers and does not collect personal data independently. The following data is created by you and stored exclusively in your iCloud account:</p>
+    <ul>
+      <li><strong>Patient profiles</strong> — name, optional date of birth, optional notes</li>
+      <li><strong>Scheduled tasks</strong> — title, type, time, repeat rule</li>
+      <li><strong>Completion records</strong> — who completed a task, when, and with what status (done / skipped)</li>
+      <li><strong>Manual logs</strong> — quick entries you add outside of scheduled tasks</li>
+      <li><strong>Your display name</strong> — stored locally on your device in app preferences; shown to other caregivers as the author of completions</li>
+    </ul>
+    <p>Tendify also stores a <strong>CloudKit user record identifier</strong> (an opaque, Apple-generated ID — not your name or email) on your device. This is used solely to distinguish your actions from those of other caregivers and to avoid sending you duplicate notifications for actions you already took.</p>
+  </section>
+
+  <section>
+    <h2>3. How Data Is Shared</h2>
+    <p>Data is shared between caregivers using Apple's <strong>CloudKit Sharing (CKShare)</strong> framework. When you invite someone, they receive access to the shared patient room through their own iCloud account. Apple handles all data transfer; Tendify never routes your data through a third-party server.</p>
+    <p>Invite codes are temporarily stored in <strong>CloudKit Public Database</strong> to allow QR-code-based joining. An invite code contains only: a short alphanumeric code, the patient's first name, and the room owner's display name. Invite records are deleted as soon as the invitation is accepted or when the owner revokes the link.</p>
+  </section>
+
+  <section>
+    <h2>4. Third-Party Services</h2>
+    <p>Tendify uses <strong>no third-party SDKs, analytics tools, advertising networks, or crash-reporting services</strong>. The only external service involved is Apple's iCloud / CloudKit, which is governed by <a href="https://www.apple.com/legal/privacy/" target="_blank">Apple's Privacy Policy</a>.</p>
+  </section>
+
+  <section>
+    <h2>5. Notifications</h2>
+    <p>Tendify sends local notifications to remind you of upcoming tasks. No notification content is transmitted to any external server — all reminders are scheduled locally on your device. If another caregiver completes a task, your device receives a silent CloudKit push from Apple's servers to trigger a local alert; no private health data is included in that push payload.</p>
+  </section>
+
+  <section>
+    <h2>6. Subscriptions</h2>
+    <p>Tendify offers an optional "Tendify Plus" subscription managed entirely through the <strong>Apple App Store (StoreKit)</strong>. We do not receive your payment details. Subscription status is verified locally on your device using Apple's signed transaction receipts.</p>
+  </section>
+
+  <section>
+    <h2>7. Data Retention and Deletion</h2>
+    <p>Your data is stored in iCloud for as long as you keep the app installed and your iCloud account active. You can delete all data at any time:</p>
+    <ul>
+      <li><strong>In the app:</strong> Settings → "Delete All My Data" permanently removes all patient rooms, tasks, and records from iCloud.</li>
+      <li><strong>Via iCloud:</strong> You can manage or delete Tendify data from <a href="https://www.icloud.com" target="_blank">iCloud.com</a> → Manage Storage → Tendify.</li>
+      <li><strong>Deleting the app</strong> removes all local data. Shared CloudKit data remains accessible to other invited caregivers until the room owner deletes the room.</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>8. Children's Privacy</h2>
+    <p>Tendify is not directed to children under 13. We do not knowingly collect personal information from children. If you believe a child has provided information through the app, please contact us so we can remove it.</p>
+  </section>
+
+  <section>
+    <h2>9. Security</h2>
+    <p>All data is encrypted in transit and at rest by Apple's iCloud infrastructure. We do not have access to your iCloud data. Caregivers can only access a patient room if explicitly invited by the room owner.</p>
+  </section>
+
+  <section>
+    <h2>10. Changes to This Policy</h2>
+    <p>We may update this Privacy Policy from time to time. The "Last updated" date at the top of this page will reflect any changes. Continued use of Tendify after an update constitutes acceptance of the revised policy.</p>
+  </section>
+
+  <section>
+    <h2>11. Contact</h2>
+    <p>If you have questions or concerns about this Privacy Policy, please contact us at:<br>
+    <a href="mailto:koraykahraman92@hotmail.com">koraykahraman92@hotmail.com</a></p>
+  </section>
+
+  <footer>
+    <span>© 2025 Tendify</span>
+    <span>
+      <a href="privacy.html">Privacy Policy</a> ·
+      <a href="terms.html">Terms of Service</a>
+    </span>
+  </footer>
+</div>
+</body>
+</html>
